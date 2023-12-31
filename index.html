@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Nav-Media</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        img{
+            height: 80px;
+            width: 80px;
+        }
+        ul{
+            width: 30%;
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        button{
+            background-color: #008000;
+            color: #fff;
+            border: none;
+            padding: 10px 25px 10px 25px;
+            border-radius: 12px;
+        }
+        button:hover{
+            background-color: #0a620a;
+        }
+        .material-symbols-outlined{
+            display: none;
+        }
+        .small-content{
+            margin: 20px 0 0 0 ;
+            height: 150px;
+            width: 120px;
+            border: 1px solid;font-weight: bolder;
+            position: relative;
+            left: 77%;
+            display: none;
+        }
+        @media  screen and (max-width:768px) {
+            ul{
+            display: none;
+            }
+            button{
+                display: none;
+            }
+            .material-symbols-outlined{
+            display: block;
+            font-size: 40px;
+            }
+            .small-content{
+                display: block;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="https://play-lh.googleusercontent.com/ahJtMe0vfOlAu1XJVQ6rcaGrQBgtrEZQefHy7SXB7jpijKhu1Kkox90XDuH8RmcBOXNn" alt="">
+        
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+        <button>Apply</button>
+        <span class="material-symbols-outlined">
+            menu
+        </span>
+    </nav>
+    <div class="small-content">
+        <p>Home</p>
+        <p>About</p>
+        <p>Contact</p>
+    </div>
+</body>
+</html>
